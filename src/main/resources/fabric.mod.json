@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "JSON-compatible config files",
+  "authors": ["BlockyPenguin"],
+  "contact": {
+    "homepage": "https://mods.blockypenguin.com/${mod_id}",
+    "sources": "https://mods.blockypenguin.com/${mod_id}/source",
+    "issues": "https://mods.blockypenguin.com/${mod_id}/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/${mod_id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "com.blockypenguin.mods.penguinconfig.PenguinConfig" ]
+  },
+  "custom": {
+    "modmenu": {
+      "update_checker": true,
+      "badges": [ "library" ]
+    }
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}-"
+  }
+}
